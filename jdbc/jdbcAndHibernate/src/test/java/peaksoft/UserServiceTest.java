@@ -6,6 +6,7 @@ import peaksoft.model.User;
 import peaksoft.service.UserService;
 import peaksoft.service.UserServiceImpl;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceTest {
@@ -15,6 +16,9 @@ public class UserServiceTest {
     private final String testName = "Kanat";
     private final String testLastName = "Subanov";
     private final byte testAge = 23;
+
+    public UserServiceTest() throws SQLException {
+    }
 
     @Test
     public void dropUsersTable() {
